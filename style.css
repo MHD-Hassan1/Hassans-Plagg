@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+}
+
+img{
+  width: 500px;
+  height: auto;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  font-size: 22px;
+  color: #b8974a;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #b8974a;
+}
+
+section {
+  padding: 40px 30px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #b8974a;
+}
+
+#hem {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 70px 30px;
+  border-bottom: 1px solid #333;
+}
+
+#hem h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #b8974a;
+}
+
+#hem p {
+  font-size: 15px;
+  margin-bottom: 24px;
+  color: #888;
+}
+
+#hem a {
+  background-color: #b8974a;
+  color: #0e0e0e;
+  padding: 10px 26px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#hem a:hover {
+  background-color: #d4b06a;
+}
+
+.produkter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.produkt {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 14px;
+}
+
+.produkt img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.produkt h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #f0f0f0;
+}
+
+.produkt .pris {
+  font-size: 17px;
+  font-weight: bold;
+  color: #b8974a;
+  margin-bottom: 8px;
+}
+
+.produkt button {
+  width: 100%;
+  background-color: #b8974a;
+  color: #0e0e0e;
+  border: none;
+  padding: 9px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.produkt button:hover {
+  background-color: #d4b06a;
+}
+
+#om {
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+}
+
+#om p {
+  color: #888;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #0e0e0e;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 1.8;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .produkter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .produkter-grid {
+    grid-template-columns: 1fr;
+  }
+}
